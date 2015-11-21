@@ -1,0 +1,8 @@
+﻿body {
+}
+.login{
+    width:400px;
+    height:300px;
+    margin:100px auto;
+    border:1px solid pink;
+}

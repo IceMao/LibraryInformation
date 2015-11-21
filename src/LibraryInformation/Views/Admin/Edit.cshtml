@@ -1,0 +1,30 @@
+﻿@model Member
+<form asp-action="Edit" asp-controller="Admin" method="post">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <table>
+        <tr>
+            <td><input type="text" name="bookName" value="@Model.bookName" /></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="writer" value="@Model.writer"/></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="publishing" value="@Model.publishing" /></td>
+        </tr>
+        <tr>
+            <td><select name="callNumber" value="@Model.callNumber">
+                <option>TP/12</option>
+                <option>TP4JP/3</option>
+                <option>TP312JA/774</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="text" name="barCode" value="@Model.barCode" /></td>
+        </tr>
+    </table>
+    <p>
+        <input type="submit" value="修改" />
+        <a asp-action="Index" asp-controller="Home">取消</a>
+    </p>
+</form>
